@@ -9,7 +9,7 @@ services:
       - ${APP_DATA_DIR}/data:/opt/cronicle/data
       - ${APP_DATA_DIR}/logs:/opt/cronicle/logs
       - ${APP_DATA_DIR}/plugins:/opt/cronicle/plugins
-      - ${APP_DATA_DIR}/ssh:/root/.ssh
+      - ${APP_DATA_DIR}/ssh:/opt/cronicle-ssh
     x-runtipi:
       is_main: true
       internal_port: '3012'

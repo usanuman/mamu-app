@@ -7,7 +7,7 @@
   "port": 3012,
   "categories": ["utilities"],
   "description": "Cronicle is a multi-server task scheduler and runner with a web-based UI. It handles both time-based (cron) and on-demand jobs across multiple servers, with real-time stats and a live log viewer.",
-  "tipi_version": 2,
+  "tipi_version": 3,
   "version": "0.9.80",
   "source": "https://github.com/jhuckaby/Cronicle",
   "exposable": true,

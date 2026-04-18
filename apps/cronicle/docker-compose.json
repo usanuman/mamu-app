@@ -22,7 +22,7 @@
         },
         {
           "hostPath": "${APP_DATA_DIR}/ssh",
-          "containerPath": "/root/.ssh"
+          "containerPath": "/opt/cronicle-ssh"
         }
       ]
     }
