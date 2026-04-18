@@ -1,0 +1,28 @@
+{
+  "services": [
+    {
+      "isMain": true,
+      "image": "soulteary/cronicle:0.9.80",
+      "name": "cronicle",
+      "internalPort": 3012,
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/data",
+          "containerPath": "/opt/cronicle/data"
+        },
+        {
+          "hostPath": "${APP_DATA_DIR}/logs",
+          "containerPath": "/opt/cronicle/logs"
+        },
+        {
+          "hostPath": "${APP_DATA_DIR}/plugins",
+          "containerPath": "/opt/cronicle/plugins"
+        },
+        {
+          "hostPath": "${APP_DATA_DIR}/ssh",
+          "containerPath": "/root/.ssh"
+        }
+      ]
+    }
+  ]
+}
