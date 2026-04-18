@@ -1,0 +1,15 @@
+services:
+  cronicle:
+    image: soulteary/cronicle:0.9.80
+    hostname: cronicle-primary
+    environment:
+      - CRONICLE_base_app_url=http://${APP_DOMAIN}
+    volumes:
+      - ${APP_DATA_DIR}/data:/opt/cronicle/data
+      - ${APP_DATA_DIR}/logs:/opt/cronicle/logs
+      - ${APP_DATA_DIR}/plugins:/opt/cronicle/plugins
+    x-runtipi:
+      is_main: true
+      internal_port: '3012'
+x-runtipi:
+  schema_version: 2
